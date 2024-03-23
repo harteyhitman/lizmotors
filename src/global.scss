@@ -1,0 +1,119 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+button{
+    width: 300px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    color: #ffff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    margin-top: 180px;
+    cursor: pointer;
+    border: 8px solid;
+    border-image: repeating-linear-gradient(135deg,#fff 0 10px,#C81917 0 20px,#000 0 30px) 8;
+    -webkit-mask:  
+      conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+       var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+      conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+       0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+      linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+}button:hover{
+    background-color: #C81917;
+    color: #000;
+    --_i: 100%;
+    transition: .3s, -webkit-mask-size .3s .3s;
+}
+.nav_items{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
+.nav_items:hover{
+    background: #C91817;
+    color: #E09CF9;
+}
+.active{
+    background: #C91817;
+    color: #E09CF9;
+}
+@media (max-width: 900px) {
+    h1{font-size: 16px;}
+    button{
+        width: 250px;
+        padding: 15px 0px;
+        border-radius: 10px;
+        color: #ffff;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-family: 'Poppins';
+        font-weight: 800;
+        margin-top: 200px;
+        cursor: pointer;
+        border: 8px solid;
+        border-image: repeating-linear-gradient(135deg,#fff 0 10px,#C81917 0 20px,#000 0 30px) 8;
+        -webkit-mask:  
+          conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+           var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+          conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+           0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+          linear-gradient(#000 0 0) padding-box no-repeat;
+        transition: .3s, -webkit-mask-position .3s .3s;
+    }button:hover{
+        background-color: #C81917;
+        color: #000;
+        --_i: 100%;
+        transition: .3s, -webkit-mask-size .3s .3s;
+    }.link_btn2{display: none;}
+
+    .nav_items{
+        display: flex;
+        justify-content: left;
+        margin-top: 30px;
+        gap: 10px;
+        color: #fff;
+        padding: 10px 10px;
+        border-radius: 10px;
+        
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .nav_items:hover{
+        background: #C91817;
+        color: #E09CF9;
+    }
+    .active{
+        background: #C91817;
+        color: #E09CF9;
+    }
+.item{display: none;}
+.open {
+    left: 100px; /* Slide in the sidebar */
+  }
+
+
+}
