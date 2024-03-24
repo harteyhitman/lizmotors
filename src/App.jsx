@@ -11,6 +11,7 @@ import Manufacture from './dashboard/nav-menu/menu/manufacture'
 import Sales from './dashboard/nav-menu/menu/sales'
 import B2c from './components/b2c'
 import EndUsers from './end-users/end-users'
+import HomePage from './dashboard/nav-menu/menu/home-page'
 
 
 const App = () => {
@@ -18,14 +19,14 @@ const App = () => {
 
     <Router>
       <Routes >
-        <Route path='/' exact element={<Main />}/>
-        <Route path='/marketresearch' element={<Main><Research /></Main>} />
-        <Route path='/planning' element={<Main><Plannning /></Main> } />
-        <Route path='/designing' element={ <Main><Design /></Main>} />
-        <Route path='/manufacturing' element={<Main><Manufacture /></Main>} />
-        <Route path='/salesmarketing' element={<Main><Sales /></Main>} />
-        <Route path='/marketresearch/b2c' element={<B2c />}/> 
-        <Route path='/marketresearch/b2c/endusers' element={<EndUsers />}/> 
+        <Route path='/' exact element={<Main><HomePage /></Main>}/>
+        <Route path='/marketresearch' exact element={<Main><Research /></Main>} />
+        <Route path='/planning' exact element={<Main><Plannning /></Main> } />
+        <Route path='/designing' exact element={ <Main><Design /></Main>} />
+        <Route path='/manufacturing' exact element={<Main><Manufacture /></Main>} />
+        <Route path='/salesmarketing' exact element={<Main><Sales /></Main>} />
+        <Route path='/marketresearch/b2c' exact element={<B2c />}/> 
+        <Route path='/marketresearch/b2c/endusers' exact element={<EndUsers />}/> 
       </Routes>
     </Router>
   )

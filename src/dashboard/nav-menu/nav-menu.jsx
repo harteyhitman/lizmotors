@@ -6,16 +6,12 @@ import { navMenuItems } from '../../data/data'
 
 
 const NavMenu = () => {
-    const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
     const [activeLink, setActiveLink] = useState('');
 
 
 
-    // const toggleSidebar = () => {
-    //     setIsOpen(!isOpen);
-    //     console.log('clicked')
-    // };
+   
     useEffect(() => {
         setActiveLink(location.pathname);
     }, [location]);
@@ -35,7 +31,7 @@ const NavMenu = () => {
 
 
             {navMenuItems.map((items, index) => (
-                <Link className={`${D.link} ${isOpen ? 'open' : 'open'}`} 
+                <Link className={`${D.link}`} 
                 to={items.route} key={items.id}
                  onClick={activeLink === index ? 'active' : ''}>
                     <div className="nav_items">
