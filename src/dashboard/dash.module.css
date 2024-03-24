@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     gap: 20px; h1{
         font-family: 'Poppins';
         -webkit-animation:bounce-in-top 2.1s both;animation:bounce-in-top 2.1s both;
