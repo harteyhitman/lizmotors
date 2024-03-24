@@ -1,21 +1,23 @@
 .dash_container{
     display: flex;
     flex-direction: column;
-    padding: 10px 40px;
-    margin: 5px 5px;
+    padding: 10px 30px;
+    /* margin: 5px 5px; */
     border: 1px solid #0D0D0B;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     align-items: left;
     background: #0D0D0B;   
 
-    /* height: 95vh;  */
-    gap: 45px;
+    height: 100vh; 
+    gap: 35px;
 }
 
 .main{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     background: #F7F7F7 cover 100%;
+    /* padding: 5px; */
 }
 h1 {
     color: #B3241F;
@@ -53,6 +55,8 @@ h1 {
 .child{
     display: flex;
     align-items: center;
+    justify-content: left;
+    background: blue;
 }
 .Logo{
     text-decoration: none; h1{
@@ -65,7 +69,12 @@ h1 {
 }
 
 @media (max-width: 900px) {
-    
+    .child{
+        display: flex;
+        align-items:left;
+        justify-content: left;
+        background: blue;
+    }
   
     .hamburger_menu{
         text-decoration: none;
@@ -85,11 +94,11 @@ h1 {
         margin: 0;
         border: 1px solid #0D0D0B;
         border-radius: 0px;
-        align-items: center;
+        align-items: left;
         background: #0D0D0B cover 100%;
         width: auto; 
-        height: auto;  
-        gap: 10px;
+        height: 100vh;  
+        gap: 20px;
     }
     
     .main{

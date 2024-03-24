@@ -12,10 +12,10 @@ const NavMenu = () => {
 
 
 
-    const toggleSidebar = () => {
-        setIsOpen(!isOpen);
-        console.log('clicked')
-    };
+    // const toggleSidebar = () => {
+    //     setIsOpen(!isOpen);
+    //     console.log('clicked')
+    // };
     useEffect(() => {
         setActiveLink(location.pathname);
     }, [location]);

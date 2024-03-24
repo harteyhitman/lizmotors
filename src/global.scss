@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    // border: 2px solid red;
 }
 img{
     max-width: 100%;
@@ -90,8 +91,9 @@ button{
 
     .nav_items{
         display: flex;
-        justify-content: left;
-        margin-top: 30px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
         gap: 10px;
         color: #fff;
         padding: 10px 10px;
